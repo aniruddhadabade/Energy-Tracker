@@ -25,6 +25,7 @@
 
 
         <EditText
+            android:id="@+id/username_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -33,12 +34,12 @@
             android:textColorHint="@color/white"
             android:textSize="20sp"
             android:background="@drawable/rounded_corner"
-            android:drawableLeft="@drawable/baselineregister_person_24"
+            android:drawableLeft="@drawable/baseline_person_24"
             android:padding="18dp"
-            android:inputType="text"
-            android:id="@+id/username_input" />
+            android:inputType="text" />
 
         <EditText
+            android:id="@+id/password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -49,25 +50,24 @@
             android:background="@drawable/rounded_corner"
             android:drawableLeft="@drawable/baseline_lock_24"
             android:padding="18dp"
-            android:inputType="textPassword"
-            android:id="@+id/password_input" />
+            android:inputType="textPassword" />
 
         <TextView
             android:id="@+id/forgot_password"
-            android:layout_width="162dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Forgot password?"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:layout_alignParentEnd="true"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="100dp"
+            android:layout_gravity="end"
             android:backgroundTint="#3B84F1"
             android:layout_below="@id/password_input" />
 
 
 
         <Button
+            android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -75,8 +75,7 @@
             android:textColor="#3B84F1"
             android:padding="18dp"
             android:layout_marginTop="8dp"
-            android:textSize="20sp"
-            android:id="@+id/login_btn" />
+            android:textSize="20sp" />
 
 
         <LinearLayout

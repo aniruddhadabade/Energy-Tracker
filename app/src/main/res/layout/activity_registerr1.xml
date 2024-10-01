@@ -33,8 +33,6 @@
                     android:textColor="@color/cardview_light_background"
                     android:text="Here’s\nyour first\nstep with \nus!" />
 
-
-
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -57,64 +55,83 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputEmail"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp">
-                        <EditText
-                            android:id="@+id/editTextName"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textEmailAddress"
-                            android:maxLines="1"
-                            android:background="@drawable/rounded_corner"
-                            android:drawableLeft="@drawable/baseline_email_24"
-                            android:hint="Email" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputPassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp">
-                        <EditText
-                            android:id="@+id/editTextEmail"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textPassword"
-                            android:maxLines="1"
-                            android:background="@drawable/rounded_corner"
-                            android:drawableLeft="@drawable/baseline_lockrege_24"
-                            android:hint="Password" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputMobile"
+                        android:id="@+id/textInputName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp">
 
                         <EditText
-                            android:id="@+id/editTextConfirmpassword"
+                            android:id="@+id/editTextUser"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Confirm Password"
-                            android:inputType="textPassword"
+                            android:autofillHints="name"
+                            android:hint="User Name"
+                            android:drawableLeft="@drawable/baseline_personregister_24"
+                            android:inputType="textPersonName"
                             android:background="@drawable/rounded_corner"
-                            android:drawableLeft="@drawable/baseline_lockrege_24"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/cirRegisterButton"
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputFullName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Register"
+                        android:layout_marginTop="16dp">
+                        <EditText
+                            android:id="@+id/editTextFullname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:background="@drawable/rounded_corner"
+                            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                            android:hint="Enter Your Name" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <EditText
+                            android:id="@+id/editTextAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Age"
+                            android:inputType="number"
+                            android:background="@drawable/rounded_corner"
+                            android:drawableLeft="@drawable/age_ph"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <EditText
+                            android:id="@+id/editNumberPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:background="@drawable/rounded_corner"
+                            android:drawableLeft="@drawable/baseline_phone_24"
+                            android:hint="Phone" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/cirNextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
                         android:layout_marginTop="16dp"
                         app:cornerRadius="27dp"
                         android:layout_gravity="center_horizontal" />
 
                     <TextView
+                        android:id="@+id/textViewAlreadyHaveAccount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Already have an account?"
@@ -122,9 +139,9 @@
                         android:textStyle="bold"
                         android:textColor="@color/themeColor"
                         android:textSize="17sp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="16dp"
                         android:onClick="onLoginClick"
-                        android:padding="12dp" />
+                        android:padding="16dp" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -179,13 +196,8 @@
         </LinearLayout>
     </ScrollView>
 
-    <View
-        android:layout_width="11dp"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/ic_side_bg" />
+
+
 
 
 
