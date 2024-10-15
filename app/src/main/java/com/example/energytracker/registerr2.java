@@ -72,7 +72,7 @@ public class registerr2 extends AppCompatActivity {
     }
 
     private void registerUser(String username, String fullName, String age, String phone, String email, String password) {
-        String url = "http://192.168.0.104/energy_tracker/register.php"; // Adjust your server IP
+        String url = "http://192.168.19.211/energy_tracker/register.php"; // Adjust your server IP
         RequestQueue queue = Volley.newRequestQueue(registerr2.this);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,

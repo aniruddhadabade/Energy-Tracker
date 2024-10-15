@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Additional colors -->
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#BDBDBD</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorError">#F44336</color>
+
+    <!-- Button colors -->
+    <color name="colorButtonNormal">#009688</color>
+    <color name="colorButtonText">#FFFFFF</color>
+
+    <!-- Your custom colors -->
+    <color name="colorReportIcon">#FF9800</color>
+    <color name="colorSettingsIcon">#607D8B</color>
+</resources>

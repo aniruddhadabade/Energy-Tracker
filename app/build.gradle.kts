@@ -36,6 +36,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation ("com.android.volley:volley:1.2.1")
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText usernameInput, passwordInput;
     Button loginBtn;
-    TextView registerBtn, forgotPassword;
+    TextView registerBtn, forgotPasswordText; // Renamed to forgotPasswordText
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         passwordInput = findViewById(R.id.password_input);
         loginBtn = findViewById(R.id.login_btn);
         registerBtn = findViewById(R.id.register_btn);
-        forgotPassword = findViewById(R.id.forgot_password);
+        forgotPasswordText = findViewById(R.id.forgot_password); // Updated ID to match your layout
 
         // Register button click event
         registerBtn.setOnClickListener(new View.OnClickListener() {
@@ -64,7 +64,16 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 // Execute login task (you need to implement this)
-                new LoginTask(MainActivity.this).execute("http://192.168.0.104/energy_tracker/login.php", username, password);
+                new LoginTask(MainActivity.this).execute("http://192.168.19.211/energy_tracker/login.php", username, password);
+            }
+        });
+
+        // Forgot password click event
+        forgotPasswordText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Forgot_password.class); // Use the correct class name for your forgot password activity
+                startActivity(intent);
             }
         });
     }

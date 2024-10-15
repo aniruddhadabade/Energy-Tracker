@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions xmlns:android="http://schemas.android.com/apk/res/android">
+    <action
+        android:name="actions.intent.START_EXERCISE"
+        android:shortcutId="shortcut_exercise"
+        android:description="@string/action_description"
+        android:label="@string/action_label" />
+</actions>

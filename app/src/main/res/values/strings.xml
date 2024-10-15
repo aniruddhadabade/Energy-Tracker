@@ -3,4 +3,6 @@
     <string name="back_button_description">Go back</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
+    <string name="action_description">Start a workout</string>
+    <string name="action_label">Start workout</string>
 </resources>
